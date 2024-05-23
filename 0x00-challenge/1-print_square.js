@@ -13,7 +13,7 @@ if (process.argv.length <= 2) {
     process.exit(1);
 }
 
-let size = parseInt(process.argv[2], 10); // Use base 10 for decimal interpretation
+let size = parseInt(process.argv[2]); // Use base 10 for decimal interpretation
 
 if (isNaN(size) || size <= 0) {
     process.stderr.write("Invalid size\n");
